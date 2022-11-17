@@ -1,0 +1,464 @@
+/*-----------------------------------------------------*/
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+/*-----------------------------------------------------*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb{
+    border-radius : 22px;
+    background: #47B5FF; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6F38C5;
+  }
+  
+/*-----------------------------------------------------*/
+.cloud1{
+    position: absolute;
+    right: 290px;
+    top: 80px;
+}
+.cloud2{
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+.mountain_img{
+    margin-top: -55px;
+}
+
+
+/*-----------------------------------------------------*/
+.nav_bar{
+    overflow: hidden;
+    background-color: #003865;
+    position: relative;
+  }
+  .nav_bar a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 19px; /*height and width*/
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .nav_bar a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 1.4s ease-out;
+  }
+  .nav_bar a:hover{
+    background-color: #A5F1E9;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #6F38C5;
+  }
+  .nav_bar a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .nav_bar a.active{
+    background-color: #FFEA11;
+    color: black;
+}
+
+/*-----------------------------------------------------*/
+h1{
+  font-size: 40px;
+  margin-top: 0;
+  font-family: 'Sacramento', cursive;
+}
+
+.hello_h1{
+    color: #829460;
+}
+
+.ved_h1{
+    margin-left: 25px;
+    color: #66BFBF;
+}
+
+.pro{
+    text-decoration: underline;
+    text-decoration-color: #6F38C5;
+}
+
+.pro:hover{
+    text-decoration: underline;
+    text-decoration-color: #6F38C5;
+    font-size: 32px;
+    transition: 0.7s all ease-in-out;
+}
+
+.programmer{
+    font-family: "Bungee Spice", sans-serif;
+    font-size: large;
+}
+
+/*-----------------------------------------------------*/
+h2{
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+/*-----------------------------------------------------*/
+h3{
+    font-family: "Montserrat", sans-serif;
+}
+
+/*-----------------------------------------------------*/
+.profile{
+    background-color: #FCFFB2;
+    border: 2px solid #6F38C5;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+/*-----------------------------------------------------*/
+.top-container{   
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 25px;
+}
+
+.img_profile{
+    margin-top: 25px;
+    width: 270px;
+    height: 270px;
+    transition: 0.7s all ease-in-out;
+}
+
+.img_profile:hover{
+    margin-top: 45px;
+    margin-bottom: 25px;
+    border: 3px solid #87A2FB; 
+    border-radius: 135px;
+    transform: scale(1.2);
+
+}
+
+
+.img_skills{
+    width: 250px;
+    height: 250px;
+}
+
+
+.ved_skills{
+    margin-top: 55px;
+    width: 800px;
+    height: 510px;
+    margin-bottom: 55px;
+}
+
+/*-----------------------------------------------------*/
+.contactme_hr{
+    border-top: 6px solid #5C2E7E;
+}
+
+.contact-me{
+    border: 2px solid #6F38C5;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #FCFFB2;
+}
+
+.getintouch{
+    margin-top: 12px;
+}
+
+.linkedin_logo{
+    margin-right: 0px;
+    width: 35px;
+    text-decoration: none;
+    height: 35px;
+}
+
+.linkedin_logo:hover{
+    width: 50px;
+    height: 50px;
+    transition-duration: 0.9s;
+}
+
+.github_logo{
+    border-radius: 15px;
+    margin-left: 12px;
+    width: 35px;
+    height: 35px;
+}
+
+.github_logo:hover{
+    width: 50px;
+    height: 50px;
+    transition-duration: 0.9s;
+}
+
+.email_gif{
+    margin-left: 12px;
+    width: 35px;
+    height: 35px;
+}
+
+.email_gif:hover{
+    width: 50px;
+    height: 50px;
+    transition-duration: 0.9s;
+}
+
+.website_link{
+    text-decoration: none;
+    margin-left: 15px;
+    font-style: oblique;
+}
+
+.website_link:hover{
+    font-size: 20px;
+    transition-duration: 0.5s;
+    text-decoration: underline;
+}
+/*-----------------------------------------------------*/
+
+/* CSS for about.html */
+
+/*--------------------------*/
+.ved_pic{
+    margin-top: 45px;
+    margin-left: 0px;
+    border: 3px solid #5C2E7E;
+    border-radius: 700px;
+    width: 350px;
+}
+
+/*--------------------------*/
+.aboutme_h2{
+    margin-top: 64px;
+    margin-left: -10px;
+    margin-bottom:25px;
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  .aboutme_h2:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.7s ease-out;
+  }
+  .aboutme_h2:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/*--------------------------*/
+.aboutme_html{
+    background-color: #E1FFB1;
+}
+
+.ul1{
+    margin-top: 105px;
+    margin-left: 155px;
+    width: 390px;
+    font-family: 'Hind';
+    font-size: larger;
+}
+
+.li1{
+    text-align: center;
+    
+}
+.diploma_span{
+    text-decoration: underline;
+    text-decoration-color: #6F38C5;
+}
+.diploma_span:hover{
+    font-size: larger;
+    transition: 0.7s all ease-in-out;
+}
+.keen_span{
+    text-decoration: underline;
+    text-decoration-color: #6F38C5;
+}
+.keen_span:hover{
+    font-size: larger;
+    transition: 0.7s all ease-in-out;
+}
+.linux_span{
+    text-decoration: underline;
+    text-decoration-color: #6F38C5;
+}
+.linux_span:hover{
+    font-size: larger;
+    transition: 0.7s all ease-in-out;
+}
+.py_span{
+    text-decoration: underline;
+    text-decoration-color: #6F38C5;
+}
+.py_span:hover{
+    font-size: larger;
+    transition: 0.7s all ease-in-out;
+}
+.li2{
+    margin-top: 25px;
+    
+}
+.li3{
+    margin-top: 25px;
+}
+
+/*--------------------------*/
+.cat_gif{
+    border: 4px solid #781C68;
+    border-radius: 100px;
+    margin-left: 650px;
+    margin-top: -325px;
+    margin-bottom: 25px;
+    width: 340px;
+}
+ 
+/*--------------------------*/
+.hr_cert{
+    border-top: 6px solid #5C2E7E;
+}
+.cert_container{
+    margin-top: 45px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 20px;
+    border: 3px solid #6F38C5;
+    border-radius: 50px;
+}
+.cert_h2{
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+.cert_h2:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.7s ease-out;
+  }
+.cert_h2:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.cert_note{
+    text-decoration: underline;
+    font-family: 'Montserrat';
+}
+
+.coursera_img{
+    width: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px; 
+}
+.coursera_img:hover{
+    width: 95px;
+    transition-duration: 0.7s;
+}
+
+.simplilearn_img{
+    width: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px; 
+}
+.simplilearn_img:hover{
+    width: 95px;
+    transition-duration: 0.7s;
+}
+
+.udemy_img{
+    width: 110px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px; 
+}   
+.udemy_img:hover{
+    width: 140px;
+    transition-duration: 0.7s;
+}
+
+.internshala_img{
+    width: 140px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+.internshala_img:hover{
+    width: 170px;
+    transition-duration: 0.7s;
+}
+
+.a_cert{
+    margin-left: 0px;
+    text-decoration: none;
+    font-family: 'Oswald';    
+    font-size: 16px;
+    position: relative;
+}
+.a_cert:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF1E1E;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.7s ease-out;
+  }
+.a_cert:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.cert_table{
+    margin-left: 75px;
+}
+
+/*--------------------------*/
